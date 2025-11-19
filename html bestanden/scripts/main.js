@@ -325,7 +325,7 @@ startBtn.addEventListener("click", () => {
   overlay.style.display = 'flex';
   tekst.textContent = '';
 
-  const introText = "Hallo avonturier, mijn naam is PiraatX². De schat van mijn overgroot opa is gestolen door π-raat. Hij heeft de schat in de Wiskunde Baai verstopt, maar ik kan hem niet alleen vinden. Ik heb jouw hulp daarbij nodig.";
+  const introText = "Hallo avonturier, mijn naam is PiraatX². De schat van mijn overgroot opa is gestolen door π-raat. Hij heeft de schat in de Wiskunde Bay verstopt, maar ik kan hem niet alleen vinden. Ik heb jouw hulp daarbij nodig.";
 
   let i = 0;
   function type() {
@@ -382,7 +382,7 @@ startBtn.addEventListener("click", () => {
 function startRondleiding(name) {
   safeGet('tekst').style.height = '150px';
   overlay.style.backdropFilter = 'blur(0px)';
-  tekst.innerHTML = `Welkom op in Wiskunde Baai, ${name}! Ik zal je een korte rondleiding geven.`;
+  tekst.innerHTML = `Welkom in Wiskunde Bay, ${name}! Ik zal je een korte rondleiding geven.`;
   addNextButton(ronleidingShop);
 }
 
@@ -400,7 +400,7 @@ function ronleidingShop() {
   safeGet('verteller').style.transform = 'translate(-30%)';
   safeGet('overlay').style.transitionDuration = '1.5s';
   safeGet('verteller').style.transitionDuration = '1.5s';  
-  tekst.innerHTML = `Dit is de winkel. hier kan je hoeden, zwaarden en ooglapjes kopen met munten. Je kan rechtsboven zien hoeveel munten je hebt. Munten verdien je door levels te spelen.`;
+  tekst.innerHTML = `Dit is de winkel. Hier kan je hoeden, zwaarden en ooglapjes kopen met munten. Je kan rechtsboven zien hoeveel munten je hebt. Munten verdien je door levels te spelen.`;
   addNextButton(ronleidingHints);
 }
 
